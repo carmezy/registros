@@ -10,15 +10,15 @@
     
 <form action="" >
     <label for=""> Nombre
-        <input type="text" placeholder="Nombre" maxlength="16" required >
+        <input type="text" placeholder="Nombre" maxlength="16" required required pattern="[A-Za-z]+">
     </label>
 
     <label for=""> contraseña
-        <input type="password" placeholder="contraseña" maxlength="16" required >
+        <input type="password" placeholder="contraseña" minlength="6" maxlength="16" required >
     </label>
 
     <label for=""> telefono
-        <input type="number" placeholder="telefono" maxlength="16" required >
+        <input type="number" placeholder="telefono" minlength="16" maxlength="16" required >
     </label>
 
     <label for="email"> email
@@ -34,11 +34,6 @@
 
     <label for="file"> coloque su archivo aqui
         <input type="file" name="file" id="file">
-    </label>
-
-
-    <label for="color"> color
-        <input type="color" placeholder="color" required>
     </label>
 
     <label for="checkbox"> es una persona
@@ -63,7 +58,7 @@
         <option value=""> argentina</option>
         <option value=""> chile</option>
         <option value=""> uruguay</option>
-        <option value=""> paraguai</option>
+        <option value=""> paraguay</option>
         <option value=""> colombia</option>
         <option value=""> guatemala</option>
     </select>
