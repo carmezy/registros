@@ -10,62 +10,34 @@
 
     
 <form action="" >
-    <label for=""> Nombre
-        <input type="text" placeholder="Nombre(solo letras) " maxlength="16" required required pattern="[A-Za-z]+">
+    <h1>registro</h1>
+
+    <label> Nombre
+        <input type="text" placeholder="Nombre" maxlength="16" required pattern="[A-Za-z]+">
+        <small class="subtexto">Solo letras, máximo 16 caracteres.</small>
     </label>
 
     <label for=""> contraseña
         <input type="password" placeholder="contraseña (minimo 6 elementos)" minlength="6" maxlength="16" required >
+        <small class="subtexto">Mínimo 6 caracteres, máximo 16, debe tener una mayuscula y por lo menos un numero.</small>
     </label>
 
     <label for=""> telefono
-        <input type="number" placeholder="telefono" minlength="16" maxlength="16" required >
-    </label>
+    <input type="text" placeholder="telefono" pattern="[0-9]{11}" maxlength="11" required>
+        <small class="subtexto">Solo números, máximo 11 dígitos.</small>
+</label>
 
     <label for="email"> email
         <input type="email" placeholder="email" required>
+        <small class="subtexto">Debe ser un email válido.</small>
     </label>
     
-    <label for="comentario"> deje su comentario 
-        
-        <textarea name="comentario" id="comentario">
-            
-            </textarea>
-    </label>    
 
-    <label for="file"> coloque su archivo aqui
-        <input type="file" name="file" id="file">
-    </label>
-
-    <label for="checkbox"> es una persona
-        <input id="opcion" name="opcion" type="checkbox"  required>
-    </label>
-
-    <label for="radio"> hombre
-        <input id="opcionu" name="opcion" type="radio"  required>
-    </label>
-
-    <label for="radio"> mujer
-        <input id="opcionu" name="opcion" type="radio"  required>
-    </label>
-
-    <label for="radio"> vaca
-        <input id="opcionu" name="opcion" type="radio"  required>
-    </label>
-
-    <select name="" id="">
-        <option value="" disabled selected> elige tu pais</option>
-        <option value=""> Venezuela</option>
-        <option value=""> Argentina</option>
-        <option value=""> Chile</option>
-        <option value=""> Uruguay</option>
-        <option value=""> Paraguay</option>
-        <option value=""> Colombia</option>
-        <option value=""> Guatemala</option>
-    </select>
 
     <button type="submit"> registrar</button>
 </form>
+
+<script src="/assets/js/script.js" > </script>
 
 </body>
 </html>

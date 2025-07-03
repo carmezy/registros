@@ -17,6 +17,19 @@ align-items: center;
 justify-content: center;
 }
 
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input.correct {
+    border: 2px solid green;
+}
+input.incorrect {
+    border: 2px solid red;
+}
+
 form{
     width: 45vw;
     background: rgba(255, 255, 255, 0.2);
@@ -43,25 +56,25 @@ input, textarea, button, select {
 
 button{
     width: 100%;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
     background-color: blueviolet;
 }
 
-label[for="file"]{
-    border-radius: 12px;
-    padding: 1rem;
-    width: 100%;
-    background-color: red;
-    color: #ffff;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-#file{
-    display: none;
-}
+
 
 select{
     width: 100%;
     text-align: center;
+}
+
+.subtexto {
+    display: block;
+    color: #000000;
+    font-size: 0.9em;
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
 }
 
 @media (max-width: 700px) {
