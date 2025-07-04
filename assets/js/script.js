@@ -65,10 +65,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     const telefono = document.querySelector('input[placeholder="telefono"]').value;
     const email = document.querySelector('input[type="email"]').value;
 
-    // (Opcional) Obtiene el género seleccionado y país si existen en el formulario
-    let generoSeleccionado = '';
-    genero.forEach(radio => { if(radio.checked) generoSeleccionado = radio.parentElement.textContent.trim(); });
-    const pais = document.querySelector('select').value;
+
 
     // Crea un objeto con los datos del usuario
     const datos = {
